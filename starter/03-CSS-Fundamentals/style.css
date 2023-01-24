@@ -69,3 +69,36 @@ aside {
   border-top: 5px solid teal;
   border-bottom: 5px solid teal;
 }
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* Doesn't work */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+a:link {
+  color: teal;
+  text-decoration: none;
+}
+
+a:visited {
+  color: teal;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* a:active {
+
+} */
