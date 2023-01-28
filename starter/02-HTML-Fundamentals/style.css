@@ -1,13 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
   border: 8px solid black;
+  width: 825px;
+  margin: 0 auto;
 }
 
-a {
+p {
+  margin-bottom: 16px;
+}
+
+.information-link {
   color: black;
+  display:inline-block;
+  margin-bottom: 32px;
 }
 
-a:hover {
+.information-link:hover {
   text-decoration: none;
 }
 
@@ -17,6 +33,8 @@ h1 {
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
+  padding: 16px 32px;
+  margin-bottom: 8px;
 }
 
 h2 {
@@ -26,10 +44,16 @@ h2 {
 
 ul {
   list-style-type: square;
+  margin-left: 32px;
+}
+
+li {
+  margin-bottom: 16px;
 }
 
 .shipping-details-label {
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .product-details-label {
@@ -44,6 +68,8 @@ button {
   border-style: none;
   font-size: 16px;
   cursor: pointer;
+  width: 100%;
+  height: 50px;
 }
 
 button:hover {
