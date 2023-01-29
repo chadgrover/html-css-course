@@ -10,7 +10,24 @@ body {
 .container {
   border: 8px solid black;
   width: 825px;
-  margin: 0 auto;
+  margin: 20px auto;
+  position: relative;
+}
+
+.sale-label {
+  position: absolute;
+  left: -44px;
+  top: -24px;
+  padding: 8px 16px;
+  width: 80px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+  letter-spacing: 4px;
 }
 
 p {
@@ -19,8 +36,8 @@ p {
 
 .information-link {
   color: black;
-  display:inline-block;
-  margin-bottom: 32px;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .information-link:hover {
@@ -75,4 +92,40 @@ button {
 button:hover {
   background-color: white;
   color: black;
+}
+
+.colors-container {
+  margin-bottom: 16px;
+}
+
+.colors-container > * {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+
+#pink {
+  background-color: pink;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+  margin-right: 0;
 }

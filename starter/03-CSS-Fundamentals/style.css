@@ -9,11 +9,13 @@ body {
   font-family: sans-serif;
 
   border-top: 10px solid teal;
+  /* position: relative; */
 }
 
 .container {
   width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
 h1,
@@ -28,9 +30,15 @@ h1 {
   font-style: italic;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 8px;
+}
+
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -49,6 +57,23 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 16px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: black;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
 }
 
 li {
@@ -159,4 +184,14 @@ nav {
 .post-img {
   width: 100%;
   height: auto;
+}
+
+.like-button {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
