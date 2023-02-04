@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,7 +10,8 @@ body {
 
 .container {
   border: 8px solid black;
-  width: 825px;
+  width: 900px;
+  height: auto;
   margin: 20px auto;
   position: relative;
 }
@@ -19,7 +21,7 @@ body {
   left: -44px;
   top: -24px;
   padding: 8px 16px;
-  width: 80px;
+  width: 100px;
   background-color: red;
   color: white;
   text-transform: uppercase;
@@ -31,7 +33,7 @@ body {
 }
 
 p {
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 }
 
 .information-link {
@@ -51,7 +53,6 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   padding: 16px 32px;
-  margin-bottom: 8px;
 }
 
 h2 {
@@ -70,7 +71,6 @@ li {
 
 .shipping-details-label {
   text-transform: uppercase;
-  margin-bottom: 16px;
 }
 
 .product-details-label {
@@ -128,4 +128,31 @@ button:hover {
 #yellow {
   background-color: yellow;
   margin-right: 0;
+}
+
+.image-container {
+  float: left;
+  width: 300px;
+}
+
+.article-container {
+  float: left;
+  width: 300px;
+  margin: 20px 0 0px 24px;
+}
+
+.article-container--top {
+  float: left;
+  margin-right: 60px;
+}
+
+.details-container {
+  float: right;
+  width: 250px;
+  margin-top: 20px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }
