@@ -11,9 +11,54 @@ body {
   color: #555;
 }
 
+html {
+  /* Divide 16 by 10 to get rem value */
+  font-size: 62.5%;
+}
+
+.hero {
+  /* When an image is larger than the container, it will scale down to fit the container */
+  max-width: 130rem;
+  /* Center the image */
+  margin: 0 auto;
+  /* Display the image next to the text */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* Vertically align the image and text */
+  align-items: center;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+
+  /* Add space between letters */
+  letter-spacing: -0.5px;
+
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
 /*
 
 --- 01 TYPOGRAPHY SYSTEM
+
 
 --- 02 COLORS
 
