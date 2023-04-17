@@ -157,13 +157,53 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
-  align-tracks: center;
+  align-items: center;
   background-color: #fdf2e9;
 
   /* To make the navigation "sticky" later on */
   height: 9.6rem;
-  padding: 4.8rem;
+  padding: 0 4.8rem;
   /* Without stickiness, you can use padding */
+}
+
+.main-nav-list {
+  /* Display the links as a block element, so they will be on even next to each other */
+  display: inline-block;
+  /* Remove the bullets */
+  list-style: none;
+  /* Display the list items next to each other, with a gap */
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  /* Needs to go on the original state */
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  /* Common practice to make the last item in your nav list a button */
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /*
