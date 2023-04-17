@@ -22,6 +22,7 @@ html {
   max-width: 130rem;
   /* Center the image */
   margin: 0 auto;
+  padding: 0 3.2rem;
   /* Display the image next to the text */
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -35,7 +36,7 @@ html {
 
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero-img {
@@ -147,6 +148,22 @@ html {
 .delivered-text span {
   color: #e67e22;
   font-weight: 700;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-tracks: center;
+  background-color: #fdf2e9;
+
+  /* To make the navigation "sticky" later on */
+  height: 9.6rem;
+  padding: 4.8rem;
+  /* Without stickiness, you can use padding */
 }
 
 /*
