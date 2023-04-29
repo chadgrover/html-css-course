@@ -43,16 +43,36 @@ html {
   width: 100%;
 }
 
-.heading-primary {
-  font-size: 5.2rem;
+.heading-primary,
+.heading-secondary {
   font-weight: 700;
-  line-height: 1.05;
   color: #333;
-
   /* Add space between letters */
   letter-spacing: -0.5px;
+}
 
+.subheading {
+  /* Needs to be a block because it's a span by default */
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin: 0 0 1.6rem 0;
+  /* Adds space between letters to look like a heading */
+  letter-spacing: 0.75px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin: 0 0 9.6rem 0;
 }
 
 .hero-description {
@@ -206,10 +226,51 @@ html {
   background-color: #cf711f;
 }
 
+.container {
+  /* Center the content inside the viewport */
+  /* 1140px is the standard width for a website */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  /* Set up a reusable grid */
+  display: grid;
+  gap: 9.6rem;
+}
+
+/* Add two dashes to the class name to make it more specific */
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section-how {
+  padding: 9.6rem;
+}
+
+.section-how div div {
+  padding: 100px;
+  font-size: 50px;
+  background-color: #333;
+}
+
+.step-img {
+  width: 50%;
+}
+
 /*
 
 --- 01 TYPOGRAPHY SYSTEM
-
 
 --- 02 COLORS
 
