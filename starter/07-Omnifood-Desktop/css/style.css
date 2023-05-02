@@ -44,7 +44,8 @@ html {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   /* Add space between letters */
@@ -73,6 +74,12 @@ html {
   font-size: 4.4rem;
   line-height: 1.2;
   margin: 0 0 9.6rem 0;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .hero-description {
@@ -237,10 +244,15 @@ html {
 .grid {
   /* Set up a reusable grid */
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 /* Add two dashes to the class name to make it more specific */
+
+.grid--center-vertically {
+  align-items: center;
+}
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -255,17 +267,65 @@ html {
 }
 
 .section-how {
-  padding: 9.6rem;
+  padding: 9.6rem 0;
 }
 
-.section-how div div {
-  padding: 100px;
-  font-size: 50px;
-  background-color: #333;
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .step-img {
-  width: 50%;
+  width: 35%;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Create a pseudo element that will be the background of the images */
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* The intrinsic height is 0%, but the padding-bottom will make it 60% of the parent container's width */
+  padding-bottom: 60%;
+
+  background-color: #fdf2e9;
+
+  /* To make the image appear on top of the background */
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+
+  background-color: #fae5d3;
+
+  z-index: -1;
 }
 
 /*
