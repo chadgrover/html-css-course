@@ -106,7 +106,8 @@ html {
 
   /* Trick to add animation to the button */
   /* Always put the transition on the original state */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -354,6 +355,151 @@ html {
   /* Make the logos grayscale */
   filter: brightness(0%);
   opacity: 45%;
+}
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.tag {
+  /* To add padding to the tag */
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: #333;
+  font-weight: 600;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #f1c40f;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+
+  /* Whatever overflow is outside of the box will be hidden */
+  overflow: hidden;
+
+  /* The bigger the element, the longer we want the transition to be */
+  transition: all 0.5s;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.meal-content {
+  /* 3.2 rem at the top and bottom, 4.8 rem at the sides */
+  padding: 3.2rem 4.8rem;
+}
+
+.meal:hover {
+  /* When hovering over the meal, make it slightly bigger */
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1)
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.link:link,
+.link:visited {
+  color: #e67e22;
+  text-decoration: none;
+
+  /* Looks better than the default underline */
+  border-bottom: 1px solid transparent;
+
+  /* Common when working with links */
+  display: inline-block;
+  padding-bottom: 0.2rem;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #888;
+}
+
+.center-text {
+  text-align: center;
 }
 
 /*
