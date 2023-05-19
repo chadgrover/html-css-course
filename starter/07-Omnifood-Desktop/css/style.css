@@ -444,7 +444,7 @@ strong {
 .meal:hover {
   /* When hovering over the meal, make it slightly bigger */
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1)
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
 
 .list {
@@ -489,7 +489,6 @@ strong {
 .link:hover,
 .link:active {
   color: #cf711f;
-  
 }
 
 .all-recipes {
@@ -500,6 +499,70 @@ strong {
 
 .center-text {
   text-align: center;
+}
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  
+  /* 55% of the container, 45% of the container */
+  grid-template-columns: 55fr 45fr;
+  /* To fix the bottom gap */
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  /* Important to make the images not overflow the container */
+  overflow: hidden;
+}
+
+.gallery-item img {
+  /* To get rid of the white space below the image */
+  display: block;
+  /* Make the images flexible */
+  width: 100%;
+
+  transition:all 0.4s;
+}
+
+.gallery-item img:hover {
+  /* Add a scaling, hover effect */
+  transform: scale(1.1);
 }
 
 /*
