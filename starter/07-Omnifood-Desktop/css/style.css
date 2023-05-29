@@ -249,6 +249,12 @@ html {
   row-gap: 9.6rem;
 }
 
+/* Add a margin to the bottom of the grid if it isn't the last child */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 /* Add two dashes to the class name to make it more specific */
 
 .grid--center-vertically {
@@ -638,6 +644,34 @@ strong {
 .plan-sign-up {
   margin-top: 4.8rem;
   text-align: center;
+}
+
+.plan-details {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 /*
