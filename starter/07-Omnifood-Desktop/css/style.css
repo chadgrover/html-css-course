@@ -296,6 +296,10 @@ html {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .section-how {
   padding: 9.6rem 0;
 }
@@ -811,4 +815,8 @@ strong {
   outline: none;
 
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.footer {
+  padding: 9.6rem;
 }
