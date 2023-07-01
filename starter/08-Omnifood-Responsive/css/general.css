@@ -67,6 +67,9 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+
+  /* All items that overflow the X-axis will be hidden */
+  overflow-x: hidden;
 }
 
 body {
@@ -74,6 +77,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* All items that overflow the X-axis will be hidden */
+  overflow-x: hidden;
 }
 
 /**************************/
@@ -248,7 +254,7 @@ body {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 
 .list-icon {
