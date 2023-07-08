@@ -1,4 +1,30 @@
 ///////////////////////////////////////////////////////////
+// Make smooth scrolling work on all browsers //
+
+const allHrefs = document.querySelectorAll("a:link");
+allHrefs.forEach(function (href) {
+  href.addEventListener("click", function (e) {
+    e.preventDefault();
+    const hrefAttribute = href.getAttribute("href");
+
+    if (hrefAttribute === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    if (hrefAttribute !== "#" && hrefAttribute.startsWith("#")) {
+      const sectionEl = document.querySelector(hrefAttribute);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (href.classList.contains("main-nav-link")) {
+      header.classList.toggle("nav-open");
+    }
+  });
+});
+
+///////////////////////////////////////////////////////////
 // Make mobile navigation work //
 
 const btnNav = document.querySelector(".btn-mobile-nav");
