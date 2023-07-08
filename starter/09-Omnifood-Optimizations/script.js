@@ -1,4 +1,14 @@
 ///////////////////////////////////////////////////////////
+// Make mobile navigation work //
+
+const btnNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+
+btnNav.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});
+
+///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");

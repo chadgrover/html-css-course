@@ -123,6 +123,8 @@
 
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
+    /* To keep the focus state on top */
+    z-index: 9999;
     display: block;
   }
 
