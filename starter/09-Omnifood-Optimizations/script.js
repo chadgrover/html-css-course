@@ -1,4 +1,32 @@
 ///////////////////////////////////////////////////////////
+// Sticky navigation //
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // We will observe this intersection through the viewport
+    root: null,
+    // As soon as the Hero Section moves out of the viewport, trigger the event
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+
+obs.observe(sectionHeroEl);
+
+///////////////////////////////////////////////////////////
 // Make smooth scrolling work on all browsers //
 
 const allHrefs = document.querySelectorAll("a:link");
@@ -48,7 +76,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
