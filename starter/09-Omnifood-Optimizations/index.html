@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Omnfifood is an AI-powered food subscription that will help you eat healthy, 365 days a year."
+    />
 
     <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +36,11 @@
     ></script>
     <script defer src="script.js"></script>
 
-    <title>Omnifood</title>
+    <!-- Favicons and Title -->
+    <title>Omnifood &mdash; Never Cook Again!</title>
+    <link rel="icon" href="img/favicon-small.png" />
+    <link rel="apple-touch-icon" href="img/favicon-apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
     <header class="header">
@@ -89,11 +97,16 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            />
+            <picture>
+              <source src="img/hero.webp" type="image/webp" />
+              <source src="img/hero-min.png" type="image/png" />
+
+              <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
       </section>
